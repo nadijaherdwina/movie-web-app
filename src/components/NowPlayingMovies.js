@@ -20,7 +20,6 @@ class NowPlayingMovies extends React.Component {
 		this.onScroll = this.onScroll.bind(this);
 		this.reachBottom = this.reachBottom.bind(this);
 		this.loadMovies = this.loadMovies.bind(this);
-		this.onPosterClick = this.onPosterClick.bind(this);
 	}
 	componentDidMount() {
 		window.addEventListener('scroll', this.onScroll);
