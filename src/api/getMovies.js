@@ -48,6 +48,21 @@ app.post('/get-detail-movies', cors(corsOptions), function(req, res, next) {
     });
 });
 
+app.post('/get-related-movies', cors(corsOptions), function(req, res, next) {
+    const id = req.body.id;
+    const apiKey = process.env.MOVIEDB_API_KEY;
+    apiUrl = baseUrl + id + '/similar?api_key=' + apiKey + '&language=en-US&page=1';
+    fetch(apiUrl)
+    .then(res => res.json())
+    .then(data => {
+        res.send({ data });
+    })
+    .catch(err => {
+        console.log(err);
+        return;
+    });
+});
+
 app.listen(port, (err) => {
     if(err) { console.log(err) 
     return; };
