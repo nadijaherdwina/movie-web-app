@@ -1,6 +1,7 @@
 import React from 'react';
 import '../App.css';
 import request from "superagent";
+import {Link} from "react-router-dom";
 
 
 class NowPlayingMovies extends React.Component {
@@ -19,6 +20,7 @@ class NowPlayingMovies extends React.Component {
 		this.onScroll = this.onScroll.bind(this);
 		this.reachBottom = this.reachBottom.bind(this);
 		this.loadMovies = this.loadMovies.bind(this);
+		this.onPosterClick = this.onPosterClick.bind(this);
 	}
 	componentDidMount() {
 		window.addEventListener('scroll', this.onScroll);
@@ -71,7 +73,7 @@ class NowPlayingMovies extends React.Component {
 		})
 		.catch((err) => {
 			this.setState({
-				error: !this.state.error,
+				error: true,
 				isLoading: false
 			})
 		})
@@ -84,7 +86,11 @@ class NowPlayingMovies extends React.Component {
 					<div className='row movieDiv'>
 						{this.state.items.map((item) => {
 							return (
-								<div className="col-md-2 col-sm-4 col-xs-6" > <img className="moviePosterList my-2" src={item.poster} alt=""/> </div>
+								<Link to={`/detail/${item.id}`}>
+									<div className="col-md-2 col-sm-4 col-xs-6" > 
+									<img className="moviePosterList my-2" id={item.id} src={item.poster} alt=""/>
+									</div>
+								</Link>
 							)
 						})}
 						{this.state.isLoading &&
