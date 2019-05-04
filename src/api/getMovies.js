@@ -25,7 +25,25 @@ app.post('/get-now-playing-movies', cors(corsOptions), function(req, res, next) 
         res.send({ data });
     })
     .catch(err => {
-        // res.redirect('/error');
+        console.log(err);
+        return;
+    });
+});
+
+app.post('/get-detail-movies', cors(corsOptions), function(req, res, next) {
+    const id = req.body.id;
+    console.log(id);
+    const apiKey = process.env.MOVIEDB_API_KEY;
+    apiUrl = baseUrl + id + '?api_key=' + apiKey;
+    fetch(apiUrl)
+    .then(res => res.json())
+    .then(data => {
+        console.log("OK");
+        console.log(data);
+        res.send({ data });
+    })
+    .catch(err => {
+        console.log(err);
         return;
     });
 });
