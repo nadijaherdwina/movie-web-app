@@ -1,6 +1,6 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
+import request from "superagent";
 
 
 class NowPlayingMovies extends React.Component {
@@ -9,101 +9,74 @@ class NowPlayingMovies extends React.Component {
 		this.state = {
 				id: '',
 				poster: '',
+				page: 1,
+				totalPages: 0,
+				error: false,
+				hasMore: true,
+				isLoading: false,
 				items: []
 		}
+		this.onScroll = this.onScroll.bind(this);
+		this.reachBottom = this.reachBottom.bind(this);
+		this.loadMovies = this.loadMovies.bind(this);
 	}
 	componentDidMount() {
-		let states = [];
-		states.push({
-			id: '1',
-			title: 'Harry Potter and the Chamber of Secrets',
-			poster: 'https://image.tmdb.org/t/p/w500/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg',
-			releaseDate: '2002-11-13',
-			description: 'Ignoring threats to his life, Harry returns to Hogwarts to investigate – aided by Ron and Hermione – a mysterious series of attacks.',
-		});
-		states.push({
-			id: '2',
-			title: 'Mamma Mia!',
-			poster: 'https://image.tmdb.org/t/p/w500/gOm2iMMbC6EonrFzmSQ8xvCa4Ei.jpg',
-			releaseDate: '2008-07-02',
-			description: 'An independent, single mother who owns a small hotel on a Greek island is about to marry off the spirited young daughter she\'s raised alone. But, the daughter has secretly invited three of her mother\'s ex-lovers in the hopes of finding her biological father.',
-		});
-		states.push({
-			id: '3',
-			title: 'Harry Potter and the Chamber of Secrets',
-			poster: 'https://image.tmdb.org/t/p/w500/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg',
-			releaseDate: '2002-11-13',
-			description: 'Ignoring threats to his life, Harry returns to Hogwarts to investigate – aided by Ron and Hermione – a mysterious series of attacks.',
-		});
-		states.push({
-			id: '4',
-			title: 'Mamma Mia!',
-			poster: 'https://image.tmdb.org/t/p/w500/gOm2iMMbC6EonrFzmSQ8xvCa4Ei.jpg',
-			releaseDate: '2008-07-02',
-			description: 'An independent, single mother who owns a small hotel on a Greek island is about to marry off the spirited young daughter she\'s raised alone. But, the daughter has secretly invited three of her mother\'s ex-lovers in the hopes of finding her biological father.',
-		});
-		states.push({
-			id: '3',
-			title: 'Harry Potter and the Chamber of Secrets',
-			poster: 'https://image.tmdb.org/t/p/w500/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg',
-			releaseDate: '2002-11-13',
-			description: 'Ignoring threats to his life, Harry returns to Hogwarts to investigate – aided by Ron and Hermione – a mysterious series of attacks.',
-		});
-		states.push({
-			id: '4',
-			title: 'Mamma Mia!',
-			poster: 'https://image.tmdb.org/t/p/w500/gOm2iMMbC6EonrFzmSQ8xvCa4Ei.jpg',
-			releaseDate: '2008-07-02',
-			description: 'An independent, single mother who owns a small hotel on a Greek island is about to marry off the spirited young daughter she\'s raised alone. But, the daughter has secretly invited three of her mother\'s ex-lovers in the hopes of finding her biological father.',
-		});
-		states.push({
-			id: '3',
-			title: 'Harry Potter and the Chamber of Secrets',
-			poster: 'https://image.tmdb.org/t/p/w500/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg',
-			releaseDate: '2002-11-13',
-			description: 'Ignoring threats to his life, Harry returns to Hogwarts to investigate – aided by Ron and Hermione – a mysterious series of attacks.',
-		});
-		states.push({
-			id: '4',
-			title: 'Mamma Mia!',
-			poster: 'https://image.tmdb.org/t/p/w500/gOm2iMMbC6EonrFzmSQ8xvCa4Ei.jpg',
-			releaseDate: '2008-07-02',
-			description: 'An independent, single mother who owns a small hotel on a Greek island is about to marry off the spirited young daughter she\'s raised alone. But, the daughter has secretly invited three of her mother\'s ex-lovers in the hopes of finding her biological father.',
-		});
-		states.push({
-			id: '3',
-			title: 'Harry Potter and the Chamber of Secrets',
-			poster: 'https://image.tmdb.org/t/p/w500/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg',
-			releaseDate: '2002-11-13',
-			description: 'Ignoring threats to his life, Harry returns to Hogwarts to investigate – aided by Ron and Hermione – a mysterious series of attacks.',
-		});
-		states.push({
-			id: '4',
-			title: 'Mamma Mia!',
-			poster: 'https://image.tmdb.org/t/p/w500/gOm2iMMbC6EonrFzmSQ8xvCa4Ei.jpg',
-			releaseDate: '2008-07-02',
-			description: 'An independent, single mother who owns a small hotel on a Greek island is about to marry off the spirited young daughter she\'s raised alone. But, the daughter has secretly invited three of her mother\'s ex-lovers in the hopes of finding her biological father.',
-		});
-		states.push({
-			id: '3',
-			title: 'Harry Potter and the Chamber of Secrets',
-			poster: 'https://image.tmdb.org/t/p/w500/sdEOH0992YZ0QSxgXNIGLq1ToUi.jpg',
-			releaseDate: '2002-11-13',
-			description: 'Ignoring threats to his life, Harry returns to Hogwarts to investigate – aided by Ron and Hermione – a mysterious series of attacks.',
-		});
-		states.push({
-			id: '4',
-			title: 'Mamma Mia!',
-			poster: 'https://image.tmdb.org/t/p/w500/gOm2iMMbC6EonrFzmSQ8xvCa4Ei.jpg',
-			releaseDate: '2008-07-02',
-			description: 'An independent, single mother who owns a small hotel on a Greek island is about to marry off the spirited young daughter she\'s raised alone. But, the daughter has secretly invited three of her mother\'s ex-lovers in the hopes of finding her biological father.',
-		});
-		
-		this.setState({
-			items: states
-		});
+		window.addEventListener('scroll', this.onScroll);
 	}
 
+	componentWillMount() {
+		this.loadMovies();
+		// window.addEventListener('scroll', this.onScroll);
+	}
+
+	onScroll() {
+		if (this.state.isLoading || this.state.error || !this.state.hasMore) {
+			return;
+		}
+
+		if (this.reachBottom()) {
+			this.loadMovies();
+		}
+
+	}
+
+	reachBottom() {
+		return (window.innerHeight + document.documentElement.scrollTop === document.documentElement.offsetHeight);
+	}
+
+	loadMovies() {
+		var posterLink = "https://image.tmdb.org/t/p/w500/";
+		this.setState({
+			isLoading: true
+		})
+		console.log("Page: " + this.state.page );
+		request
+		.post('http://localhost:5050/get-now-playing-movies')
+		.send({page: this.state.page})
+		.then((res) => {
+			// console.log(res);
+			const newMovies = res.body.data.results.map(movie => ({
+				id: movie.id,
+				poster: posterLink + movie.poster_path
+			}));
+			this.setState({
+				totalPages: res.body.total_pages,
+				isLoading: false,
+				hasmore: (this.state.page <= this.state.totalPages),
+				items: this.state.items.concat(newMovies),
+				page: this.state.page + 1
+			});
+			console.log("items:")
+			console.log(this.state.items)
+		})
+		.catch((err) => {
+			this.setState({
+				error: !this.state.error,
+				isLoading: false
+			})
+		})
+	}
+		
 	render() {
 		return (
 				<div className="align-items-center text-center justify-content-center vh-100 d-flex flex-column">
@@ -111,9 +84,15 @@ class NowPlayingMovies extends React.Component {
 					<div className='row movieDiv'>
 						{this.state.items.map((item) => {
 							return (
-								<div className="col-md-2 col-sm-4 col-xs-6" > <img className="moviePosterList my-2" src={item.poster}/> </div>
+								<div className="col-md-2 col-sm-4 col-xs-6" > <img className="moviePosterList my-2" src={item.poster} alt=""/> </div>
 							)
 						})}
+						{this.state.isLoading &&
+							<div> <h1> Loading... </h1> </div>
+						}
+						{!this.state.hasMore && 
+							<div><h1> All movies loaded. </h1></div>
+						}
 					</div>
 				</div>
 
