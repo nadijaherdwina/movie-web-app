@@ -27,7 +27,6 @@ class NowPlayingMovies extends React.Component {
 
 	componentWillMount() {
 		this.loadMovies();
-		// window.addEventListener('scroll', this.onScroll);
 	}
 
 	onScroll() {
