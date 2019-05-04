@@ -10,7 +10,7 @@ const routing = (
     <BrowserRouter>
       <div>
         <Route exact path="/" component={NowPlayingMovies} />
-        <Route path="/movie/1" component={DetailMovie} />
+        <Route path="/detail/:id" render={(props) => <DetailMovie {...props}/>} />
       </div>
     </BrowserRouter>
   )
