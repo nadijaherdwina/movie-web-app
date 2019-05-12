@@ -1,0 +1,1147 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<NowPlayingMovies /> renders without crashing 1`] = `ShallowWrapper {}`;
+
+exports[`<NowPlayingMovies /> renders without crashing again 1`] = `
+initialize {
+  "0": Object {
+    "attribs": Object {},
+    "children": Array [
+      Object {
+        "attribs": Object {
+          "class": "navbar navbar-expand-lg navbar-light bg-dark",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "class": "navbar-brand",
+              "href": "/",
+            },
+            "children": Array [
+              Object {
+                "data": " ",
+                "next": Object {
+                  "attribs": Object {
+                    "class": "subtitle  pl-5 ml-5 pt-1",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Home ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "h5",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+              Object {
+                "attribs": Object {
+                  "class": "subtitle  pl-5 ml-5 pt-1",
+                },
+                "children": Array [
+                  Object {
+                    "data": " Home ",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "h5",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "data": " ",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+            ],
+            "name": "a",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": Object {
+              "attribs": Object {
+                "aria-controls": "navbarNav",
+                "aria-expanded": "false",
+                "aria-label": "Toggle navigation",
+                "class": "navbar-toggler",
+                "data-target": "#navbarNav",
+                "data-toggle": "collapse",
+                "type": "button",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "class": "navbar-toggler-icon",
+                  },
+                  "children": Array [],
+                  "name": "span",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+              ],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": [Circular],
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "aria-controls": undefined,
+                "aria-expanded": undefined,
+                "aria-label": undefined,
+                "class": undefined,
+                "data-target": undefined,
+                "data-toggle": undefined,
+                "type": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "aria-controls": undefined,
+                "aria-expanded": undefined,
+                "aria-label": undefined,
+                "class": undefined,
+                "data-target": undefined,
+                "data-toggle": undefined,
+                "type": undefined,
+              },
+            },
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+              "href": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+              "href": undefined,
+            },
+          },
+          Object {
+            "attribs": Object {
+              "aria-controls": "navbarNav",
+              "aria-expanded": "false",
+              "aria-label": "Toggle navigation",
+              "class": "navbar-toggler",
+              "data-target": "#navbarNav",
+              "data-toggle": "collapse",
+              "type": "button",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "class": "navbar-toggler-icon",
+                },
+                "children": Array [],
+                "name": "span",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+            ],
+            "name": "button",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": Object {
+              "attribs": Object {
+                "class": "navbar-brand",
+                "href": "/",
+              },
+              "children": Array [
+                Object {
+                  "data": " ",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "subtitle  pl-5 ml-5 pt-1",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Home ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "h5",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+                Object {
+                  "attribs": Object {
+                    "class": "subtitle  pl-5 ml-5 pt-1",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Home ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "h5",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "data": " ",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+              ],
+              "name": "a",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": [Circular],
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "href": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "href": undefined,
+              },
+            },
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "aria-controls": undefined,
+              "aria-expanded": undefined,
+              "aria-label": undefined,
+              "class": undefined,
+              "data-target": undefined,
+              "data-toggle": undefined,
+              "type": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "aria-controls": undefined,
+              "aria-expanded": undefined,
+              "aria-label": undefined,
+              "class": undefined,
+              "data-target": undefined,
+              "data-toggle": undefined,
+              "type": undefined,
+            },
+          },
+        ],
+        "name": "nav",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "class": "mx-3 mt-3 movieDiv header",
+          },
+          "children": Array [
+            Object {
+              "data": "Now Playing Movies",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "text",
+            },
+          ],
+          "name": "h2",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": Object {
+            "attribs": Object {
+              "class": "row movieDiv d-flex justify-content-center",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "class": "loader",
+                },
+                "children": Array [
+                  Object {
+                    "data": " ",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                ],
+                "name": "div",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                },
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": [Circular],
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": null,
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "class": "mx-3 mt-3 movieDiv header",
+        },
+        "children": Array [
+          Object {
+            "data": "Now Playing Movies",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "text",
+          },
+        ],
+        "name": "h2",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": Object {
+          "attribs": Object {
+            "class": "row movieDiv d-flex justify-content-center",
+          },
+          "children": Array [
+            Object {
+              "attribs": Object {
+                "class": "loader",
+              },
+              "children": Array [
+                Object {
+                  "data": " ",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+              ],
+              "name": "div",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+              },
+            },
+          ],
+          "name": "div",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": null,
+          "parent": [Circular],
+          "prev": [Circular],
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "class": "navbar navbar-expand-lg navbar-light bg-dark",
+          },
+          "children": Array [
+            Object {
+              "attribs": Object {
+                "class": "navbar-brand",
+                "href": "/",
+              },
+              "children": Array [
+                Object {
+                  "data": " ",
+                  "next": Object {
+                    "attribs": Object {
+                      "class": "subtitle  pl-5 ml-5 pt-1",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Home ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "h5",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": [Circular],
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "text",
+                },
+                Object {
+                  "attribs": Object {
+                    "class": "subtitle  pl-5 ml-5 pt-1",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " Home ",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                  ],
+                  "name": "h5",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": Object {
+                    "data": " ",
+                    "next": [Circular],
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+              ],
+              "name": "a",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": Object {
+                "attribs": Object {
+                  "aria-controls": "navbarNav",
+                  "aria-expanded": "false",
+                  "aria-label": "Toggle navigation",
+                  "class": "navbar-toggler",
+                  "data-target": "#navbarNav",
+                  "data-toggle": "collapse",
+                  "type": "button",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "class": "navbar-toggler-icon",
+                    },
+                    "children": Array [],
+                    "name": "span",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                ],
+                "name": "button",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": [Circular],
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "aria-controls": undefined,
+                  "aria-expanded": undefined,
+                  "aria-label": undefined,
+                  "class": undefined,
+                  "data-target": undefined,
+                  "data-toggle": undefined,
+                  "type": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "aria-controls": undefined,
+                  "aria-expanded": undefined,
+                  "aria-label": undefined,
+                  "class": undefined,
+                  "data-target": undefined,
+                  "data-toggle": undefined,
+                  "type": undefined,
+                },
+              },
+              "parent": [Circular],
+              "prev": null,
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "class": undefined,
+                "href": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "class": undefined,
+                "href": undefined,
+              },
+            },
+            Object {
+              "attribs": Object {
+                "aria-controls": "navbarNav",
+                "aria-expanded": "false",
+                "aria-label": "Toggle navigation",
+                "class": "navbar-toggler",
+                "data-target": "#navbarNav",
+                "data-toggle": "collapse",
+                "type": "button",
+              },
+              "children": Array [
+                Object {
+                  "attribs": Object {
+                    "class": "navbar-toggler-icon",
+                  },
+                  "children": Array [],
+                  "name": "span",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                  },
+                },
+              ],
+              "name": "button",
+              "namespace": "http://www.w3.org/1999/xhtml",
+              "next": null,
+              "parent": [Circular],
+              "prev": Object {
+                "attribs": Object {
+                  "class": "navbar-brand",
+                  "href": "/",
+                },
+                "children": Array [
+                  Object {
+                    "data": " ",
+                    "next": Object {
+                      "attribs": Object {
+                        "class": "subtitle  pl-5 ml-5 pt-1",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": " Home ",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "h5",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                  Object {
+                    "attribs": Object {
+                      "class": "subtitle  pl-5 ml-5 pt-1",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Home ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "h5",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Object {
+                      "data": " ",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                ],
+                "name": "a",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": [Circular],
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+              },
+              "type": "tag",
+              "x-attribsNamespace": Object {
+                "aria-controls": undefined,
+                "aria-expanded": undefined,
+                "aria-label": undefined,
+                "class": undefined,
+                "data-target": undefined,
+                "data-toggle": undefined,
+                "type": undefined,
+              },
+              "x-attribsPrefix": Object {
+                "aria-controls": undefined,
+                "aria-expanded": undefined,
+                "aria-label": undefined,
+                "class": undefined,
+                "data-target": undefined,
+                "data-toggle": undefined,
+                "type": undefined,
+              },
+            },
+          ],
+          "name": "nav",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": null,
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+      Object {
+        "attribs": Object {
+          "class": "row movieDiv d-flex justify-content-center",
+        },
+        "children": Array [
+          Object {
+            "attribs": Object {
+              "class": "loader",
+            },
+            "children": Array [
+              Object {
+                "data": " ",
+                "next": null,
+                "parent": [Circular],
+                "prev": null,
+                "type": "text",
+              },
+            ],
+            "name": "div",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": null,
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+        ],
+        "name": "div",
+        "namespace": "http://www.w3.org/1999/xhtml",
+        "next": null,
+        "parent": [Circular],
+        "prev": Object {
+          "attribs": Object {
+            "class": "mx-3 mt-3 movieDiv header",
+          },
+          "children": Array [
+            Object {
+              "data": "Now Playing Movies",
+              "next": null,
+              "parent": [Circular],
+              "prev": null,
+              "type": "text",
+            },
+          ],
+          "name": "h2",
+          "namespace": "http://www.w3.org/1999/xhtml",
+          "next": [Circular],
+          "parent": [Circular],
+          "prev": Object {
+            "attribs": Object {
+              "class": "navbar navbar-expand-lg navbar-light bg-dark",
+            },
+            "children": Array [
+              Object {
+                "attribs": Object {
+                  "class": "navbar-brand",
+                  "href": "/",
+                },
+                "children": Array [
+                  Object {
+                    "data": " ",
+                    "next": Object {
+                      "attribs": Object {
+                        "class": "subtitle  pl-5 ml-5 pt-1",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": " Home ",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "h5",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": [Circular],
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "text",
+                  },
+                  Object {
+                    "attribs": Object {
+                      "class": "subtitle  pl-5 ml-5 pt-1",
+                    },
+                    "children": Array [
+                      Object {
+                        "data": " Home ",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                    ],
+                    "name": "h5",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": Object {
+                      "data": " ",
+                      "next": [Circular],
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                ],
+                "name": "a",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": Object {
+                  "attribs": Object {
+                    "aria-controls": "navbarNav",
+                    "aria-expanded": "false",
+                    "aria-label": "Toggle navigation",
+                    "class": "navbar-toggler",
+                    "data-target": "#navbarNav",
+                    "data-toggle": "collapse",
+                    "type": "button",
+                  },
+                  "children": Array [
+                    Object {
+                      "attribs": Object {
+                        "class": "navbar-toggler-icon",
+                      },
+                      "children": Array [],
+                      "name": "span",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "button",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": null,
+                  "parent": [Circular],
+                  "prev": [Circular],
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "aria-controls": undefined,
+                    "aria-expanded": undefined,
+                    "aria-label": undefined,
+                    "class": undefined,
+                    "data-target": undefined,
+                    "data-toggle": undefined,
+                    "type": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "aria-controls": undefined,
+                    "aria-expanded": undefined,
+                    "aria-label": undefined,
+                    "class": undefined,
+                    "data-target": undefined,
+                    "data-toggle": undefined,
+                    "type": undefined,
+                  },
+                },
+                "parent": [Circular],
+                "prev": null,
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "class": undefined,
+                  "href": undefined,
+                },
+              },
+              Object {
+                "attribs": Object {
+                  "aria-controls": "navbarNav",
+                  "aria-expanded": "false",
+                  "aria-label": "Toggle navigation",
+                  "class": "navbar-toggler",
+                  "data-target": "#navbarNav",
+                  "data-toggle": "collapse",
+                  "type": "button",
+                },
+                "children": Array [
+                  Object {
+                    "attribs": Object {
+                      "class": "navbar-toggler-icon",
+                    },
+                    "children": Array [],
+                    "name": "span",
+                    "namespace": "http://www.w3.org/1999/xhtml",
+                    "next": null,
+                    "parent": [Circular],
+                    "prev": null,
+                    "type": "tag",
+                    "x-attribsNamespace": Object {
+                      "class": undefined,
+                    },
+                    "x-attribsPrefix": Object {
+                      "class": undefined,
+                    },
+                  },
+                ],
+                "name": "button",
+                "namespace": "http://www.w3.org/1999/xhtml",
+                "next": null,
+                "parent": [Circular],
+                "prev": Object {
+                  "attribs": Object {
+                    "class": "navbar-brand",
+                    "href": "/",
+                  },
+                  "children": Array [
+                    Object {
+                      "data": " ",
+                      "next": Object {
+                        "attribs": Object {
+                          "class": "subtitle  pl-5 ml-5 pt-1",
+                        },
+                        "children": Array [
+                          Object {
+                            "data": " Home ",
+                            "next": null,
+                            "parent": [Circular],
+                            "prev": null,
+                            "type": "text",
+                          },
+                        ],
+                        "name": "h5",
+                        "namespace": "http://www.w3.org/1999/xhtml",
+                        "next": null,
+                        "parent": [Circular],
+                        "prev": [Circular],
+                        "type": "tag",
+                        "x-attribsNamespace": Object {
+                          "class": undefined,
+                        },
+                        "x-attribsPrefix": Object {
+                          "class": undefined,
+                        },
+                      },
+                      "parent": [Circular],
+                      "prev": null,
+                      "type": "text",
+                    },
+                    Object {
+                      "attribs": Object {
+                        "class": "subtitle  pl-5 ml-5 pt-1",
+                      },
+                      "children": Array [
+                        Object {
+                          "data": " Home ",
+                          "next": null,
+                          "parent": [Circular],
+                          "prev": null,
+                          "type": "text",
+                        },
+                      ],
+                      "name": "h5",
+                      "namespace": "http://www.w3.org/1999/xhtml",
+                      "next": null,
+                      "parent": [Circular],
+                      "prev": Object {
+                        "data": " ",
+                        "next": [Circular],
+                        "parent": [Circular],
+                        "prev": null,
+                        "type": "text",
+                      },
+                      "type": "tag",
+                      "x-attribsNamespace": Object {
+                        "class": undefined,
+                      },
+                      "x-attribsPrefix": Object {
+                        "class": undefined,
+                      },
+                    },
+                  ],
+                  "name": "a",
+                  "namespace": "http://www.w3.org/1999/xhtml",
+                  "next": [Circular],
+                  "parent": [Circular],
+                  "prev": null,
+                  "type": "tag",
+                  "x-attribsNamespace": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                  "x-attribsPrefix": Object {
+                    "class": undefined,
+                    "href": undefined,
+                  },
+                },
+                "type": "tag",
+                "x-attribsNamespace": Object {
+                  "aria-controls": undefined,
+                  "aria-expanded": undefined,
+                  "aria-label": undefined,
+                  "class": undefined,
+                  "data-target": undefined,
+                  "data-toggle": undefined,
+                  "type": undefined,
+                },
+                "x-attribsPrefix": Object {
+                  "aria-controls": undefined,
+                  "aria-expanded": undefined,
+                  "aria-label": undefined,
+                  "class": undefined,
+                  "data-target": undefined,
+                  "data-toggle": undefined,
+                  "type": undefined,
+                },
+              },
+            ],
+            "name": "nav",
+            "namespace": "http://www.w3.org/1999/xhtml",
+            "next": [Circular],
+            "parent": [Circular],
+            "prev": null,
+            "type": "tag",
+            "x-attribsNamespace": Object {
+              "class": undefined,
+            },
+            "x-attribsPrefix": Object {
+              "class": undefined,
+            },
+          },
+          "type": "tag",
+          "x-attribsNamespace": Object {
+            "class": undefined,
+          },
+          "x-attribsPrefix": Object {
+            "class": undefined,
+          },
+        },
+        "type": "tag",
+        "x-attribsNamespace": Object {
+          "class": undefined,
+        },
+        "x-attribsPrefix": Object {
+          "class": undefined,
+        },
+      },
+    ],
+    "name": "div",
+    "namespace": "http://www.w3.org/1999/xhtml",
+    "next": null,
+    "parent": null,
+    "prev": null,
+    "root": Object {
+      "attribs": Object {},
+      "children": Array [
+        [Circular],
+      ],
+      "name": "root",
+      "namespace": "http://www.w3.org/1999/xhtml",
+      "next": null,
+      "parent": null,
+      "prev": null,
+      "type": "root",
+      "x-attribsNamespace": Object {},
+      "x-attribsPrefix": Object {},
+    },
+    "type": "tag",
+    "x-attribsNamespace": Object {},
+    "x-attribsPrefix": Object {},
+  },
+  "_root": [Circular],
+  "length": 1,
+  "options": Object {
+    "decodeEntities": true,
+    "normalizeWhitespace": false,
+    "withDomLvl1": true,
+    "xml": false,
+  },
+}
+`;
