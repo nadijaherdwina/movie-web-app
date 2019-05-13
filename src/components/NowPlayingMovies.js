@@ -85,11 +85,11 @@ class NowPlayingMovies extends React.Component {
 		return (
 				<div>	
 					<NavigationBar className="m-2" current="false"></NavigationBar>
-					<h2 className='mx-3 mt-3 movieDiv header'>Now Playing Movies</h2>
+					<h2 className=' movieDiv header center'>Now Playing Movies</h2>
 					<div className='row movieDiv d-flex justify-content-center'>
 						{this.state.items.map((item) => {
 							return (
-								<Link to={`/detail/${item.id}`}  id={item.id}  className="col-lg-2 col-md-4 col-xs-6 d-flex align-items-center flex-column m-3">
+								<Link to={`/detail/${item.id}`}  key={item.id}  className="col-lg-2 col-md-4 col-xs-6 d-flex align-items-center flex-column m-3">
 									<div >
 										<img className="moviePosterList my-2" id={item.id} src={item.poster} alt=""/>
 									</div>

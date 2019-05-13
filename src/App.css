@@ -126,3 +126,8 @@ a {
 .navbarLink:hover {
   text-decoration: underline !important;
 }
+
+.center {
+  margin: auto;
+  text-align: center
+}
