@@ -2,6 +2,7 @@ import React from 'react';
 import '../App.css';
 import request from "superagent";
 import {Link} from "react-router-dom";
+import NavigationBar from "./NavigationBar";
 
 
 class NowPlayingMovies extends React.Component {
@@ -46,6 +47,7 @@ class NowPlayingMovies extends React.Component {
 
 	loadMovies() {
 		var posterLink = "https://image.tmdb.org/t/p/w500/";
+		var noPosterLink = "http://www.video2k.is/assets/images/my_videos/no_poster.png"
 		this.setState({
 			isLoading: true
 		})
@@ -55,10 +57,12 @@ class NowPlayingMovies extends React.Component {
 		.send({page: this.state.page})
 		.then((res) => {
 			// console.log(res);
-			const newMovies = res.body.data.results.map(movie => ({
+			var newMovies = res.body.data.results.map(movie => ({
 				id: movie.id,
-				poster: posterLink + movie.poster_path
+				title: movie.title,
+				poster: movie.poster_path ? posterLink + movie.poster_path : noPosterLink
 			}));
+			
 			this.setState({
 				totalPages: res.body.total_pages,
 				isLoading: false,
@@ -79,20 +83,24 @@ class NowPlayingMovies extends React.Component {
 		
 	render() {
 		return (
-				<div className="align-items-center text-center justify-content-center vh-100 d-flex flex-column">
-					<h1 className='display-3'>Movie List</h1>
-					<div className='row movieDiv'>
+				<div>	
+					<NavigationBar className="m-2" current="false"></NavigationBar>
+					<h2 className='mx-3 mt-3 movieDiv header'>Now Playing Movies</h2>
+					<div className='row movieDiv d-flex justify-content-center'>
 						{this.state.items.map((item) => {
 							return (
-								<Link to={`/detail/${item.id}`}>
-									<div className="col-md-2 col-sm-4 col-xs-6" > 
-									<img className="moviePosterList my-2" id={item.id} src={item.poster} alt=""/>
+								<Link to={`/detail/${item.id}`}  id={item.id}  className="col-lg-2 col-md-4 col-xs-6 d-flex align-items-center flex-column m-3">
+									<div >
+										<img className="moviePosterList my-2" id={item.id} src={item.poster} alt=""/>
+									</div>
+									<div className="movieTitle">
+										<h5>{item.title}</h5>
 									</div>
 								</Link>
 							)
 						})}
 						{this.state.isLoading &&
-							<div> <h1> Loading... </h1> </div>
+							<div className="loader"> </div>
 						}
 						{!this.state.hasMore && 
 							<div><h1> All movies loaded. </h1></div>
