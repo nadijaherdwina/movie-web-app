@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import './App.css';
 import {BrowserRouter, Route} from "react-router-dom";
 
 import NowPlayingMovies from "./components/NowPlayingMovies";
