@@ -16,14 +16,8 @@ describe('<DetailMovie />', () => {
                 expect(wrapper).toMatchSnapshot();
         });
     
-        it('renders without crashing again', () => {
+        it('contains specific id', () => {
                 const wrapper = shallow(<DetailMovie match={match}/>);
                 expect(wrapper.containsMatchingElement(<div className="col" id="11631"></div>))
         });
-
-        // it("has correct title movie", () => {
-        //         const wrapper = mount(<DetailMovie match={match}/>);
-        //         const text = wrapper.find("<h5 className='text' id='tagline'>").text();
-        //         expect(text).toEqual("Take a trip down the aisle you'll never forget");
-        // });
 });
